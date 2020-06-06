@@ -1,0 +1,105 @@
+body{
+    background-color: whitesmoke; 
+}
+.leftContainer{
+    background-color:white; 
+    margin-top:180px;
+    border: 5px double #1D1D1D;
+    border-radius: 35px;
+    margin-right: 25px;
+    margin-left: 20px;
+    margin-bottom:70px;;
+
+}
+.rightContainer{
+    background-color:white;
+    margin-top:210px;
+    border: 5px double #1D1D1D;
+    border-radius: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom:100px;
+}
+#profileImage{
+    width: 400px;
+    height:360px;
+    border: 2px solid black;
+    border-radius:100%;
+    margin-top:30px;
+}
+#picUpload{
+    float: right;
+}
+/*#picEdit{
+    color:#17A2B8;
+    text-decoration: underline;
+}*/
+#h3{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detail{
+    margin-top:40px;    
+}
+.detail-form{
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.reward{
+    margin-top:60px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#h2{
+    padding: 10px;
+}
+.form-control{
+    border:2px solid black; 
+}
+
+form .form-control:focus{
+    box-shadow: none;
+    
+}
+    
+#choose{
+    margin-top: 20px;
+}
+
+#phnno{
+    border: 2px solid black;
+    border-radius:10%;
+    background-color: white;
+    margin-right: 2px;
+
+}
+#error1{
+    margin-top:10px; 
+}
+#update{
+    float:right;
+    margin-top:20px;
+    margin-right:50px;
+}
+@media only screen and (max-width:575px) {
+    #exampleInputPhno{
+        margin-right: -30px;
+    }
+}
+@media only screen and (max-width:765px) {
+    .rightContainer{
+        margin-top: auto;
+    }
+}
+@media only screen and (max-width:990px) {
+    #profileImage{
+        width:800px;
+    }
+}
+@media only screen and (max-width:573px) {
+    #update{
+        float:left;
+
+    } 
+}

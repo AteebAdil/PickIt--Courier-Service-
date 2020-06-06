@@ -1,0 +1,37 @@
+body{
+    background-color:snow;
+}
+.container{
+    margin-top: 155px;
+}
+hr{
+    border: 0.5px solid black;
+}
+form .form-control:focus{
+    box-shadow: none; 
+}
+.form-control{
+    background-color:snow; 
+}
+
+.input-group-text{
+    background-color:snow;
+}
+.reciever{
+    border-left: 5px solid black;
+
+}
+.heading{
+    text-decoration: underline;
+}
+.parcel{
+    margin-top:20px;
+}
+#weight{
+    display: none;
+}
+@media only screen and (max-width:1000px) {
+    .reciever{
+      border: none;
+    }
+}

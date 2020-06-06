@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/mydashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile.css">
+    <title>Profile!</title>
+  </head>
+  <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="nav-item name">
+                <a class="navbar-brand" href="mydashboard.html">Pick It!</a>
+                </div>
+                <button class="btn btn-outline-info ml-auto mr-3 order-lg-last button" type="button" id="signin">Sign In</button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 list">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="request.html" id="requestform">Request Form<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="profile.html">User Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="cancel.html">Cancel Request</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" >Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#" >About Us</a>
+                    </li>
+                  </ul>
+                    <button class="btn btn-outline-info mr-lg-3 button" id="signup" type="submit">Sign Up</button>
+                </div>
+              </nav>>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 leftContainer">
+                            <div class="pic">
+                            <img id="profileImage" class="img-thumbnail" src="../Image/icons8-user-100 (1).png">
+                            <a href="#" id="picEdit"><img  src="../Image/icons8-edit-30.png">Edit</a>
+                          </div>
+                            <div class="detail">
+                            
+                            <h3 id="h3"></h3>
+
+                            </div>    
+                        </div>
+                        <div class="col-lg rightContainer">
+                          <h2 id="h2">Editable Profile</h2>
+                          <form  class="detail-form" autocomplete="off">
+                            <div class="form-group row" >
+                                    <label for="exampleInputName" class="col-sm-2 col-form-label">Name:</label>
+                              <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="exampleInputName">
+                                  </div>
+                                    <label for="exampleInputAddres" class="col-sm-2 col-form-label">Address:</label>
+                              <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="exampleInputAddress" >
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputCity" class="col-sm-2 col-form-label">City:</label>
+                              <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="exampleInputCity">
+                                </div>
+                                    <label for="exampleInputProvice" class="col-sm-2 col-form-label">Province:</label>
+                              <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="exampleInputProvince">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputState" class="col-sm-2 col-form-label">State:</label>
+                              <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="exampleInputState">
+                                  </div>
+                                    <label for="exampleInputEmail" class="col-sm-2 col-form-label">Email:</label>
+                              <div class="col-sm-4">
+                                    <input type="email" class="form-control" id="exampleInputEmail">
+                                  </div>
+                                </div>
+                                <div class="input-group row">
+                                    <label for="exampleInputPhno" class="col-sm-3 col-form-label">Phone Number:</label>
+                              <div class="input-group-prepend col-sm-6">
+                                    <span class="input-group-text" id="phnno">92</span>
+                                    <input type="text" class="form-control" id="exampleInputPhno" pattern=".{10}" title="More than 10 digits are not allowed">
+                                  </div>
+                                </div>    
+                            </form>  
+                            <div>
+                              <p id="reward">Reward: <span id="rewardValue">  </span><img src="../image/icons8-coins-48.png" id="coins"></p>
+                            
+                            </div>
+                    </div>
+                </div>
+                </div>     
+              <script>
+              document.getElementById("signup").onclick=function(){
+                window.open("signup.html");
+              }
+              document.getElementById("signin").onclick=function(){
+                window.open("login.html");
+              }
+              var reward=0;
+              document.getElementById("rewardValue").innerHTML=reward;
+              var name="User";
+              document.getElementById("h3").innerHTML=name;
+              var username="Not Set";
+              var Address="Not Set";
+              var City="Not Set";
+              var Province="Not Set";
+              var State="Not Set";
+              var Email="Not Set";
+              var PhoneNumber="Not Set";
+              document.getElementById("exampleInputName").placeholder=username;
+              document.getElementById("exampleInputAddress").placeholder=Address;
+              document.getElementById("exampleInputCity").placeholder=City;
+              document.getElementById("exampleInputProvince").placeholder=Province;
+              document.getElementById("exampleInputState").placeholder=State;
+              document.getElementById("exampleInputEmail").placeholder=Email;
+              document.getElementById("exampleInputPhno").placeholder=PhoneNumber;
+              
+            </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

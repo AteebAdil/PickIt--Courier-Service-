@@ -1,0 +1,53 @@
+.container{
+    margin-top: 180px;
+    margin-bottom:50px;
+}
+.aboutus{
+    margin-top:10px;
+    border: 2px solid #17A2B8;
+}
+#aboutpara{
+    padding:20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#abouthr{
+    margin:20px;
+    border:3px solid black;
+}
+#abouthead{
+    padding:20px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*
+#logoImage{
+    width: 350px;
+    border:3px solid black;
+    margin-left: 150px;
+}*/
+.imageContainer{
+    background-image: url("../Image/logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-left:20px;
+    margin-top:50px;
+}
+@media only screen and (max-width:990px) {
+    #abouthead{
+        font-size:50px;
+        font-family: 'Times New Roman', Times, serif;
+    }   
+}
+@media only screen and (max-width:991px) {
+.imageContainer{
+    display: none;
+}
+.aboutus{
+    background-image: url("../Image/logo.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: 3px solid black;
+    color:white;
+}
+}  

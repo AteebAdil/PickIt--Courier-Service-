@@ -1,0 +1,36 @@
+.signup-container{
+    border-left:2px solid black;
+    border-right:2px solid black;
+    padding: 40px 100px;
+    height: 100vh;
+}
+body{
+    background-image: url(../Image/registration.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+hr{
+    border:2px solid black;
+}
+.form-control{
+    background-color:#E2E5EA; 
+}
+form .form-control:focus{
+    box-shadow: none;
+    outline: 2px solid black; 
+}
+#btn-create{
+    margin-top:25px; 
+}
+#h1{
+    font-size:40px;
+}
+@media only screen and (max-width:450px) {
+    #h1{
+      font-size: 40px;
+    }
+    .signup-container{
+       padding:30px 60px; 
+    }
+  }
+  }  

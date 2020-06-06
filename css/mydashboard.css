@@ -1,0 +1,128 @@
+.name{
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 6%;
+    border: 4px double #17A2B8;
+    /*-webkit-box-shadow: inset 0px 1px 14px 6px rgba(23,162,184,0.93);
+    -moz-box-shadow: inset 0px 1px 14px 6px rgba(23,162,184,0.93);
+    box-shadow: inset 0px 1px 14px 6px rgba(23,162,184,0.93);
+    */
+    /*-webkit-box-shadow: 0px 0px 8px 8px rgba(23,162,184,0.53);
+    -moz-box-shadow: 0px 0px 8px 8px rgba(23,162,184,0.53);
+    box-shadow: 0px 0px 8px 8px rgba(23,162,184,0.53);*/
+}
+.navbar{
+    background-color: #1D1D1D;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px; 
+}
+.button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    border: 2px solid #17A2B8;
+    /*-webkit-box-shadow: inset 0px 1px 14px 3px rgba(23,162,184,0.93);
+    -moz-box-shadow: inset 0px 1px 14px 3px rgba(23,162,184,0.93);
+    box-shadow: inset 0px 1px 14px 3px rgba(23,162,184,0.93);*/
+}
+.nav-item a:hover { 
+    color:  #17A2B8 !important; 
+}
+.userlink{
+    font-size: 17px;
+    color:white !important;
+}
+#userImage{
+    margin-right: 5px;
+    border-radius: 100%;
+    width:39px;
+}
+.dashboardjumbotron{
+    margin-top:95px;
+    background-image: url("../Image/jumbotronbox.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+}
+#facilities{
+    color:#17A2B8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Email{
+    color: white !important;
+}
+a:hover{
+    color:black !important;
+}
+.facilities{
+    
+    padding:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#h1{
+    margin-top:100px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#17A2B8;
+    font-size: 80px;
+}
+.message{
+    color: black;
+    font-size:25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+address{
+    color:whitesmoke;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    border-top:3px dashed black;
+    margin-top: 100px;
+    background-color:#17A2B8;
+    display:none;
+}
+
+#foothead{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#line{
+    color: #1D1D1D;
+}
+.IconLabel{
+    text-align: center;
+    margin-top: 10px;
+    font-family: fantasy;
+}
+.icons{
+    width:300px;
+    border: 3px double #17A2B8;
+}
+.divicons{
+    margin-top:10px; 
+}
+blink {
+    animation: blinker 1s linear infinite;
+    color:#17A2B8;
+   }
+  @keyframes blinker {  
+    50% { opacity: 0; }
+   }
+@media only screen and (max-width:575px) {
+    .IconLabel{
+        text-align: left;
+    }
+}
+@media only screen and (max-width:480px) {
+    .name{
+        margin-right: 200px;
+    }
+}
